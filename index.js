@@ -152,3 +152,35 @@ switch(true) {
     default:
         console.log('F')
 }
+
+const month = new Date().getMonth();
+console.log(month)
+// Winter:January,February,March
+// Sprign:April,May,June
+// Summer:July,August,September
+// Autumn:October,November,December
+
+switch(month){
+    case 0:
+    case 1:
+    case 2:
+        console.log('Winter')
+    break;    
+    case 3:
+    case 4:
+    case 5:
+        console.log('Spring')
+    break;
+    case 6:    
+    case 7: 
+    case 8:
+        console.log('Summer')
+    break;
+    case 9:
+    case 10:    
+    case 11:
+        console.log('Autumn')
+    break;
+    default:
+        console.log('Something went horribly wrong ...')  
+}
